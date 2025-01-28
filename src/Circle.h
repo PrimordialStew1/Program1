@@ -15,9 +15,13 @@ class Circle
 {
 private:
     int radius = 0;
-    const float PI = 3.14159;
     string fillColor = "";
     string borderColor = "";
+
+    const int DEFAULT_RADIUS = 10;
+    const float PI = 3.14159;
+    const string DEFAULT_FILL_COLOR = "Red";
+    const string DEFAULT_BORDER_COLOR = "Grey";
 
 public:
     Circle();
