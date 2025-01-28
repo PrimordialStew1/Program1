@@ -32,6 +32,8 @@ Triangle::Triangle(int p_side1, int p_side2, int p_side3)
   side1 = abs(p_side1);
   side2 = abs(p_side2);
   side3 = abs(p_side3);
+  borderColor = "Red";
+  fillColor = "Grey";
 
   std::cout << "Triangle Class by Aaron Davis for Elementary Graphics\n\n";
 }
@@ -83,7 +85,16 @@ void Triangle::SetBorderColor(string p_color)
 
 float Triangle::CalcArea()
 {
-  float area = sqrt(4 * pow(side1,2) * pow(side2, 2) - pow(pow(side1, 2) + pow(side2, 2) - pow(side3, 2), 2)) / 4;
+  float area = 0;
+  if(IsValidTriangle(side1, side2, side3))
+  {
+    area = sqrt(4 * pow(side1,2) * pow(side2, 2) - pow(pow(side1, 2) + pow(side2, 2) - pow(side3, 2), 2)) / 4;
+  }
+  else
+  {
+    area = 0;
+  }
+
   return area;
 }
 int Triangle::CalcPerimeter()
@@ -94,4 +105,15 @@ int Triangle::CalcPerimeter()
 void Triangle::PrintInfo()
 {
   std::cout << "Triangle Object:\nSide1 = " << side1 << ", Side2 = " << side2 << ", Side3 = " << side3 << "\nBorder Color = " << borderColor << ", Fill Color = " << fillColor << "\n\n";
+}
+
+int Triangle::IsValidTriangle(int p_side1, int p_side2, int p_side3)
+{
+  int valid = 0;
+  if((p_side1 + p_side2 > p_side3) && (p_side1 + p_side3 > p_side2) && (p_side2 + p_side3 > p_side1))
+  {
+    valid = 1;
+  }
+  
+  return valid;
 }

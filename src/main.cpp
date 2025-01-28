@@ -5,7 +5,7 @@
 
 int main() {
 
-  Triangle triangle1(-6, 8, 10);
+  Triangle triangle1(-6, 8, 20);
 
   triangle1.PrintInfo();
 
@@ -15,7 +15,7 @@ int main() {
   Circle circle1;
   circle1.PrintInfo();
   
-  std::cout << circle1.GetArea() << '\n';
+  std::cout << circle1.CalcArea() << '\n';
   
 
 

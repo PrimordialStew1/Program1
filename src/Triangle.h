@@ -19,6 +19,7 @@ class Triangle
     int side3 = 0;
     string borderColor = "";
     string fillColor = "";
+    int IsValidTriangle(int p_side1, int p_side2, int p_side3);
 
   public:
     Triangle();
