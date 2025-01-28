@@ -28,7 +28,7 @@ Circle::~Circle()
 }
 Circle::Circle(int p_rad, string p_fillColor, string p_borderColor)
 {
-    if(p_rad)
+    if (p_rad)
     {
         radius = abs(p_rad);
     }
@@ -48,7 +48,10 @@ int Circle::GetRadius()
 }
 void Circle::SetRadius(int p_rad)
 {
-    radius = abs(p_rad);
+    if (p_rad)
+    {
+        radius = abs(p_rad);
+    }
 }
 
 string Circle::GetFillColor()
