@@ -6,7 +6,7 @@
 int main()
 {
 
-    Triangle triangle1(-6, 8, 20);
+    Triangle triangle1(-5, 0, 0);
 
     triangle1.PrintInfo();
 

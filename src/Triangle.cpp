@@ -29,9 +29,30 @@ Triangle::~Triangle()
 }
 Triangle::Triangle(int p_side1, int p_side2, int p_side3)
 {
-    side1 = abs(p_side1);
-    side2 = abs(p_side2);
-    side3 = abs(p_side3);
+    if(p_side1 != 0)
+    {
+        side1 = abs(p_side1);
+    }
+    else
+    {
+        side1 = 3;
+    }
+    if(p_side2 != 0)
+    {
+        side2 = abs(p_side2);
+    }
+    else
+    {
+        side2 = 4;
+    }
+    if(p_side3 != 0)
+    {
+        side3 = abs(p_side3);
+    }
+    else
+    {
+        side3 = 5;
+    }
     borderColor = "Red";
     fillColor = "Grey";
 
