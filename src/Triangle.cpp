@@ -86,7 +86,7 @@ void Triangle::SetBorderColor(string p_color)
 float Triangle::CalcArea()
 {
     float area = 0;
-    if (IsValidTriangle(side1, side2, side3))
+    if (isValidTriangle(side1, side2, side3))
     {
         area = sqrt(4 * pow(side1, 2) * pow(side2, 2) - pow(pow(side1, 2) + pow(side2, 2) - pow(side3, 2), 2)) / 4;
     }
@@ -100,7 +100,7 @@ float Triangle::CalcArea()
 int Triangle::CalcPerimeter()
 {
     int perimeter = 0;
-    if (IsValidTriangle(side1, side2, side3))
+    if (isValidTriangle(side1, side2, side3))
     {
         perimeter = side1 + side2 + side3;
     }
@@ -113,7 +113,9 @@ void Triangle::PrintInfo()
     std::cout << "Triangle Object:\nSide1 = " << side1 << ", Side2 = " << side2 << ", Side3 = " << side3 << "\nBorder Color = " << borderColor << ", Fill Color = " << fillColor << "\n\n";
 }
 
-int Triangle::IsValidTriangle(int p_side1, int p_side2, int p_side3)
+// Private functions
+
+int Triangle::isValidTriangle(int p_side1, int p_side2, int p_side3)
 {
     int valid = 0;
     if ((p_side1 + p_side2 > p_side3) && (p_side1 + p_side3 > p_side2) && (p_side2 + p_side3 > p_side1))
