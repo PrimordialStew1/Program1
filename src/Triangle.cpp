@@ -65,7 +65,10 @@ int Triangle::GetSide1()
 }
 void Triangle::SetSide1(int p_side1)
 {
-    side1 = p_side1;
+    if(p_side1 != 0)
+    {
+        side1 = abs(p_side1);
+    }
 }
 
 int Triangle::GetSide2()
@@ -74,7 +77,10 @@ int Triangle::GetSide2()
 }
 void Triangle::SetSide2(int p_side2)
 {
-    side2 = p_side2;
+    if(p_side2 != 0)
+    {
+        side2 = abs(p_side2);
+    }
 }
 
 int Triangle::GetSide3()
@@ -83,7 +89,10 @@ int Triangle::GetSide3()
 }
 void Triangle::SetSide3(int p_side3)
 {
-    side3 = p_side3;
+    if(p_side3 != 0)
+    {
+        side3 = abs(p_side3);
+    }
 }
 
 string Triangle::GetFillColor()
