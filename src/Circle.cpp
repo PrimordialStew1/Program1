@@ -28,7 +28,14 @@ Circle::~Circle()
 }
 Circle::Circle(int p_rad, string p_fillColor, string p_borderColor)
 {
-    radius = abs(p_rad);
+    if(p_rad)
+    {
+        radius = abs(p_rad);
+    }
+    else
+    {
+        radius = 10;
+    }
     fillColor = p_fillColor;
     borderColor = p_borderColor;
 

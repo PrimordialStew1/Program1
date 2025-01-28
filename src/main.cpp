@@ -13,7 +13,7 @@ int main()
     std::cout << triangle1.CalcArea() << '\n';
     std::cout << triangle1.CalcPerimeter();
 
-    Circle circle1;
+    Circle circle1(0, "Red", "Grey");
     circle1.PrintInfo();
 
     std::cout << circle1.CalcArea() << '\n';
