@@ -99,7 +99,13 @@ float Triangle::CalcArea()
 }
 int Triangle::CalcPerimeter()
 {
-  return side1 + side2 + side3;
+  int perimeter = 0;
+  if(IsValidTriangle(side1, side2, side3))
+  {
+    perimeter = side1 + side2 + side3;
+  }
+
+  return perimeter;
 }
 
 void Triangle::PrintInfo()
