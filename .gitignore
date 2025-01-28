@@ -1,5 +1,5 @@
-#ignore .vscode
+# ignore .vscode
 .vscode/
 
-#ignore output file
+#ignore main output
 main
