@@ -11,67 +11,67 @@
 #include <iostream>
 #include <cmath>
 
-using std::string;
 using std::cout;
+using std::string;
 
 Circle::Circle()
 {
-  radius = 10;
-  fillColor = "Red";
-  borderColor = "Grey";
+    radius = 10;
+    fillColor = "Red";
+    borderColor = "Grey";
 
-  cout << "Circle Class by Aaron Davis for Elementary Graphics\n\n";
+    cout << "Circle Class by Aaron Davis for Elementary Graphics\n\n";
 }
 Circle::~Circle()
 {
-  cout << "Bye, bye circle!";
+    cout << "Bye, bye circle!";
 }
 Circle::Circle(int p_rad, string p_fillColor, string p_borderColor)
 {
-  radius = abs(p_rad);
-  fillColor = p_fillColor;
-  borderColor = p_borderColor;
+    radius = abs(p_rad);
+    fillColor = p_fillColor;
+    borderColor = p_borderColor;
 
-  cout << "Circle Class by Aaron Davis for Elementary Graphics\n\n";
+    cout << "Circle Class by Aaron Davis for Elementary Graphics\n\n";
 }
 
 int Circle::GetRadius()
 {
-  return radius;
+    return radius;
 }
 void Circle::SetRadius(int p_rad)
 {
-  radius = abs(p_rad);
+    radius = abs(p_rad);
 }
 
 string Circle::GetFillColor()
 {
-  return fillColor;
+    return fillColor;
 }
 void Circle::SetFillColor(string p_color)
 {
-  fillColor = p_color;
+    fillColor = p_color;
 }
 
 string Circle::GetBorderColor()
 {
-  return borderColor;
+    return borderColor;
 }
 void Circle::SetBorderColor(string p_color)
 {
-  borderColor = p_color;
+    borderColor = p_color;
 }
 
 float Circle::CalcArea()
 {
-  return PI * pow(radius, 2);
+    return PI * pow(radius, 2);
 }
 int Circle::CalcPerimeter()
 {
-  return 2 * PI * radius;
+    return 2 * PI * radius;
 }
 
 void Circle::PrintInfo()
 {
-  std::cout << "Circle Object:\nRadius = " << radius << "\nBorder Color = " << borderColor << ", Fill Color = " << fillColor << "\n\n";
+    std::cout << "Circle Object:\nRadius = " << radius << "\nBorder Color = " << borderColor << ", Fill Color = " << fillColor << "\n\n";
 }

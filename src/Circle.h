@@ -13,20 +13,20 @@ using std::string;
 
 class Circle
 {
-  private:
+private:
     int radius = 0;
     const float PI = 3.14159;
     string fillColor = "";
     string borderColor = "";
 
-  public:
+public:
     Circle();
     ~Circle();
     Circle(int p_rad, string p_fillColor, string p_borderColor);
-    
+
     int GetRadius();
     void SetRadius(int p_rad);
-    
+
     string GetFillColor();
     void SetFillColor(string p_color);
 
@@ -37,5 +37,4 @@ class Circle
     int CalcPerimeter();
 
     void PrintInfo();
-    
 };

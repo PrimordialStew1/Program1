@@ -13,7 +13,7 @@ using std::string;
 
 class Triangle
 {
-  private:
+private:
     int side1 = 0;
     int side2 = 0;
     int side3 = 0;
@@ -21,7 +21,7 @@ class Triangle
     string fillColor = "";
     int IsValidTriangle(int p_side1, int p_side2, int p_side3);
 
-  public:
+public:
     Triangle();
     ~Triangle();
     Triangle(int p_side1, int p_side2, int p_side3);
@@ -45,5 +45,4 @@ class Triangle
     int CalcPerimeter();
 
     void PrintInfo();
-
 };
