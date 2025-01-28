@@ -13,36 +13,36 @@ using std::string;
 
 class Triangle
 {
-private:
-    int side1 = 0;
-    int side2 = 0;
-    int side3 = 0;
-    string borderColor = "";
-    string fillColor = "";
-    int isValidTriangle(int p_side1, int p_side2, int p_side3);
+    private:
+        int side1 = 0;
+        int side2 = 0;
+        int side3 = 0;
+        string borderColor = "";
+        string fillColor = "";
+        int isValidTriangle(int p_side1, int p_side2, int p_side3);
 
-public:
-    Triangle();
-    ~Triangle();
-    Triangle(int p_side1, int p_side2, int p_side3);
+    public:
+        Triangle();
+        ~Triangle();
+        Triangle(int p_side1, int p_side2, int p_side3);
 
-    int GetSide1();
-    void SetSide1(int p_side1);
+        int GetSide1();
+        void SetSide1(int p_side1);
 
-    int GetSide2();
-    void SetSide2(int p_side2);
+        int GetSide2();
+        void SetSide2(int p_side2);
 
-    int GetSide3();
-    void SetSide3(int p_side3);
+        int GetSide3();
+        void SetSide3(int p_side3);
 
-    string GetFillColor();
-    void SetFillColor(string p_color);
+        string GetFillColor();
+        void SetFillColor(string p_color);
 
-    string GetBorderColor();
-    void SetBorderColor(string p_color);
+        string GetBorderColor();
+        void SetBorderColor(string p_color);
 
-    float CalcArea();
-    int CalcPerimeter();
+        float CalcArea();
+        int CalcPerimeter();
 
-    void PrintInfo();
+        void PrintInfo();
 };
