@@ -15,11 +15,11 @@ using std::string;
 
 Triangle::Triangle()
 {
-    side1 = 3;
-    side2 = 4;
-    side3 = 5;
-    borderColor = "Red";
-    fillColor = "Grey";
+    side1 = DEFAULT_SIDE1;
+    side2 = DEFAULT_SIDE2;
+    side3 = DEFAULT_SIDE3;
+    borderColor = DEFAULT_BORDER_COLOR;
+    fillColor = DEFAULT_FILL_COLOR;
 
     std::cout << "Triangle Class by Aaron Davis for Elementary Graphics\n\n";
 }
@@ -35,7 +35,7 @@ Triangle::Triangle(int p_side1, int p_side2, int p_side3)
     }
     else
     {
-        side1 = 3;
+        side1 = DEFAULT_SIDE1;
     }
     if(p_side2 != 0)
     {
@@ -43,7 +43,7 @@ Triangle::Triangle(int p_side1, int p_side2, int p_side3)
     }
     else
     {
-        side2 = 4;
+        side2 = DEFAULT_SIDE2;
     }
     if(p_side3 != 0)
     {
@@ -51,10 +51,10 @@ Triangle::Triangle(int p_side1, int p_side2, int p_side3)
     }
     else
     {
-        side3 = 5;
+        side3 = DEFAULT_SIDE3;
     }
-    borderColor = "Red";
-    fillColor = "Grey";
+    borderColor = DEFAULT_BORDER_COLOR;
+    fillColor = DEFAULT_FILL_COLOR;
 
     std::cout << "Triangle Class by Aaron Davis for Elementary Graphics\n\n";
 }

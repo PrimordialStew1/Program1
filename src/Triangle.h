@@ -19,6 +19,13 @@ class Triangle
         int side3 = 0;
         string borderColor = "";
         string fillColor = "";
+
+        const int DEFAULT_SIDE1 = 3;
+        const int DEFAULT_SIDE2 = 4;
+        const int DEFAULT_SIDE3 = 5;
+        const string DEFAULT_BORDER_COLOR = "Red";
+        const string DEFAULT_FILL_COLOR = "Grey";
+
         int isValidTriangle(int p_side1, int p_side2, int p_side3);
 
     public:
