@@ -1,7 +1,6 @@
 
 #include "Triangle.h"
 #include "Circle.h"
-#include <iostream>
 
 int main()
 {
