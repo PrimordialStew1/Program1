@@ -8,45 +8,27 @@
 
 #pragma once
 #include <string>
+#include "Shape.h"
 
 using std::string;
 
-class Triangle
+class Triangle : public Shape
 {
 private:
-    int side1 = 0;
-    int side2 = 0;
-    int side3 = 0;
-    string borderColor = "";
-    string fillColor = "";
+    int sides = 0;
 
-    const int DEFAULT_SIDE1 = 3;
-    const int DEFAULT_SIDE2 = 4;
-    const int DEFAULT_SIDE3 = 5;
+    const int DEFAULT_SIDES = 2;
+    
     const string DEFAULT_BORDER_COLOR = "Red";
     const string DEFAULT_FILL_COLOR = "Grey";
-
-    int isValidTriangle(int p_side1, int p_side2, int p_side3);
 
 public:
     Triangle();
     ~Triangle();
-    Triangle(int p_side1, int p_side2, int p_side3);
+    Triangle(int p_sides, string p_fillColor, string p_borderColor);
 
-    int GetSide1();
-    void SetSide1(int p_side1);
-
-    int GetSide2();
-    void SetSide2(int p_side2);
-
-    int GetSide3();
-    void SetSide3(int p_side3);
-
-    string GetFillColor();
-    void SetFillColor(string p_color);
-
-    string GetBorderColor();
-    void SetBorderColor(string p_color);
+    int GetSides();
+    void SetSides(int p_sides);
 
     float CalcArea();
     int CalcPerimeter();
