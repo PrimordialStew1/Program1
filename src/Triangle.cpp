@@ -18,8 +18,8 @@ Triangle::Triangle()
     side1 = DEFAULT_SIDE1;
     side2 = DEFAULT_SIDE2;
     side3 = DEFAULT_SIDE3;
-    borderColor = DEFAULT_BORDER_COLOR;
-    fillColor = DEFAULT_FILL_COLOR;
+    SetBorderColor(DEFAULT_BORDER_COLOR);
+    SetFillColor(DEFAULT_FILL_COLOR);
 
     std::cout << "Triangle Class by Aaron Davis for Elementary Graphics\n\n";
 }
@@ -53,8 +53,8 @@ Triangle::Triangle(int p_side1, int p_side2, int p_side3)
     {
         side3 = DEFAULT_SIDE3;
     }
-    borderColor = DEFAULT_BORDER_COLOR;
-    fillColor = DEFAULT_FILL_COLOR;
+    SetBorderColor(DEFAULT_BORDER_COLOR);
+    SetFillColor(DEFAULT_FILL_COLOR);
 
     std::cout << "Triangle Class by Aaron Davis for Elementary Graphics\n\n";
 }
