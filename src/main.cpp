@@ -17,8 +17,6 @@ int main()
 
     std::cout << "Triangle 1 Area: " << triangle1.CalcArea() << '\n';
 
-    triangle1.PrintInfo();
-
     std::cout << "Triangle 1 Area: " << triangle1.CalcArea() << '\n';
 
     // Circle testing
@@ -40,6 +38,11 @@ int main()
 
     circle1.PrintInfo();
     circle2.PrintInfo();
+
+    // Shape testing
+
+    Shape shape1;
+    shape1.PrintInfo();
 
     return 0;
 }
