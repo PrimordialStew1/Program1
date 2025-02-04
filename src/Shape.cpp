@@ -17,6 +17,8 @@ Shape::Shape()
     numSides = 0;
     borderColor = "clear";
     fillColor = "clear";
+
+    cout << "Shape Class by Aaron Davis for Elementary Graphics\n\n";
 }
 Shape::~Shape()
 {
@@ -62,15 +64,30 @@ int Shape::CalcPerimeter()
 
 void Shape::PrintInfo(int p_size)
 {
-
+    if (shapeType == "circle")
+    {
+        cout << "Circle Object:\n";
+        cout << "Radius = " << p_size << '\n';
+        cout << "Border color = " << borderColor << ", Fill color = " << fillColor << '\n';
+    }
+    else if(shapeType == "triangle")
+    {
+        cout << "Triangle Object:\n";
+        cout << "Side length = " << p_size << '\n';
+        cout << "Border color = " << borderColor << ", Fill color = " << fillColor << '\n\n';
+    }
+    else
+    {
+        cout << "Shape Object:\n";
+        cout << "Size = " << p_size << '\n';
+        cout << "Border color = " << borderColor << ", Fill color = " << fillColor << '\n\n';
+    }
 }
 
 void Shape::SetShapeType(string p_shapeType)
 {
-
 }
 
 void Shape::SetNumSides(int p_numSides)
 {
-
 }
