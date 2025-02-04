@@ -16,7 +16,9 @@ using std::string;
 
 Circle::Circle()
 {
-    radius = DEFAULT_RADIUS;
+    SetShapeType("circle");
+    SetNumSides(1);
+    SetRadius(DEFAULT_RADIUS);
 
     cout << "Circle Class by Aaron Davis for Elementary Graphics\n\n";
 }
@@ -26,14 +28,18 @@ Circle::~Circle()
 }
 Circle::Circle(int p_rad, string p_fillColor, string p_borderColor)
 {
+    SetShapeType("circle");
+    SetNumSides(1);
     if (p_rad)
     {
-        radius = abs(p_rad);
+        SetRadius(p_rad);
     }
     else
     {
-        radius = DEFAULT_RADIUS;
+        SetRadius(DEFAULT_RADIUS);
     }
+    SetBorderColor(p_borderColor);
+    SetFillColor(p_fillColor);
 
     cout << "Circle Class by Aaron Davis for Elementary Graphics\n\n";
 }
