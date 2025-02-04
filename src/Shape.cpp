@@ -6,7 +6,6 @@
 // For: CS221-02, Spring 2025 Mrs. Delugach
 // Using compiler g++
 
-#include <iostream>
 #include "Shape.h"
 
 using std::cout;

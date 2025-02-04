@@ -7,9 +7,6 @@
 // Using compiler g++
 
 #include "Triangle.h"
-#include <string>
-#include <iostream>
-#include <cmath>
 
 using std::string;
 

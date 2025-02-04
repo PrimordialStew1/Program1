@@ -7,7 +7,6 @@
 // Using compiler g++
 
 #pragma once
-#include <string>
 #include "Shape.h"
 
 using std::string;

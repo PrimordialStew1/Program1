@@ -7,9 +7,6 @@
 // Using compiler g++
 
 #include "Circle.h"
-#include <string>
-#include <iostream>
-#include <cmath>
 
 using std::cout;
 using std::string;
