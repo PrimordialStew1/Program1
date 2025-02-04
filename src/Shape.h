@@ -9,3 +9,38 @@
 #pragma once
 #include <string>
 
+using std::string;
+
+class Shape
+{
+private:
+    string shapeType = "";
+    int numSides = 0;
+    string fillColor = "";
+    string borderColor = "";
+
+public:
+    Shape();
+    ~Shape();
+    
+    string GetFillColor();
+    void SetFillColor(string p_color);
+
+    string GetBorderColor();
+    void SetBorderColor(string p_color);
+
+    string GetShapeType();
+
+    int GetNumSides();
+
+    float CalcArea();
+    int CalcPerimeter();
+
+    void PrintInfo(int p_size = 0);
+
+protected:
+    void SetShapeType(string p_shapeType);
+
+    void SetNumSides(int p_numSides);
+
+};
