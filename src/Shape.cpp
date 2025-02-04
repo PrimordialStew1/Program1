@@ -5,3 +5,66 @@
 // email: amd0047@uah.edu
 // For: CS221-02, Spring 2025 Mrs. Delugach
 // Using compiler g++
+
+#include "Shape.h"
+
+Shape::Shape()
+{
+
+}
+Shape::~Shape()
+{
+
+}
+
+string Shape::GetFillColor()
+{
+    return "";
+}
+void Shape::SetFillColor(string p_color)
+{
+
+}
+
+string Shape::GetBorderColor()
+{
+    return "";
+}
+void Shape::SetBorderColor(string p_color)
+{
+
+}
+
+string Shape::GetShapeType()
+{
+    return "";
+}
+
+int Shape::GetNumSides()
+{
+    return 0;
+}
+
+float Shape::CalcArea()
+{
+    return 0;
+}
+int Shape::CalcPerimeter()
+{
+    return 0;
+}
+
+void Shape::PrintInfo(int p_size)
+{
+
+}
+
+void Shape::SetShapeType(string p_shapeType)
+{
+
+}
+
+void Shape::SetNumSides(int p_numSides)
+{
+
+}
