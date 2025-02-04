@@ -21,7 +21,7 @@ Circle::Circle()
 }
 Circle::~Circle()
 {
-    cout << "Bye, bye circle!";
+    cout << "Bye, bye circle!\n";
 }
 Circle::Circle(int p_rad, string p_fillColor, string p_borderColor)
 {

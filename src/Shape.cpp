@@ -21,7 +21,7 @@ Shape::Shape()
 }
 Shape::~Shape()
 {
-    cout << "This shape got eviscerated!";
+    cout << "This shape got eviscerated!\n";
 }
 
 string Shape::GetFillColor()

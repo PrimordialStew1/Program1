@@ -22,7 +22,7 @@ Triangle::Triangle()
 }
 Triangle::~Triangle()
 {
-    std::cout << "Triangle Destroyed!";
+    std::cout << "Triangle Destroyed!\n";
 }
 Triangle::Triangle(int p_sides, string p_fillColor, string p_borderColor)
 {
