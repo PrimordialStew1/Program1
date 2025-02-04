@@ -25,35 +25,35 @@ Shape::~Shape()
 
 string Shape::GetFillColor()
 {
-    return "";
+    return fillColor;
 }
 void Shape::SetFillColor(string p_color)
 {
-
+    fillColor = p_color;
 }
 
 string Shape::GetBorderColor()
 {
-    return "";
+    return borderColor;
 }
 void Shape::SetBorderColor(string p_color)
 {
-
+    borderColor = p_color;
 }
 
 string Shape::GetShapeType()
 {
-    return "";
+    return shapeType;
 }
 
 int Shape::GetNumSides()
 {
-    return 0;
+    return numSides;
 }
 
 float Shape::CalcArea()
 {
-    return 0;
+    return 0.0;
 }
 int Shape::CalcPerimeter()
 {
