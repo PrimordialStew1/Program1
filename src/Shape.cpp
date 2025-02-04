@@ -74,13 +74,13 @@ void Shape::PrintInfo(int p_size)
     {
         cout << "Triangle Object:\n";
         cout << "Side length = " << p_size << '\n';
-        cout << "Border color = " << borderColor << ", Fill color = " << fillColor << '\n\n';
+        cout << "Border color = " << borderColor << ", Fill color = " << fillColor << "\n\n";
     }
     else
     {
         cout << "Shape Object:\n";
         cout << "Size = " << p_size << '\n';
-        cout << "Border color = " << borderColor << ", Fill color = " << fillColor << '\n\n';
+        cout << "Border color = " << borderColor << ", Fill color = " << fillColor << "\n\n";
     }
 }
 
