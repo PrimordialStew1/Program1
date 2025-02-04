@@ -8,15 +8,14 @@
 
 #pragma once
 #include <string>
+#include "Shape.h"
 
 using std::string;
 
-class Circle
+class Circle : public Shape
 {
 private:
     int radius = 0;
-    string fillColor = "";
-    string borderColor = "";
 
     const int DEFAULT_RADIUS = 10;
     const float PI = 3.14159;
@@ -30,12 +29,6 @@ public:
 
     int GetRadius();
     void SetRadius(int p_rad);
-
-    string GetFillColor();
-    void SetFillColor(string p_color);
-
-    string GetBorderColor();
-    void SetBorderColor(string p_color);
 
     float CalcArea();
     int CalcPerimeter();
