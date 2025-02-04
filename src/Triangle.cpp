@@ -26,6 +26,9 @@ Triangle::~Triangle()
 }
 Triangle::Triangle(int p_sides, string p_fillColor, string p_borderColor)
 {
+    SetShapeType("triangle");
+    SetNumSides(3);
+    
     SetSides(p_sides);
 
     SetBorderColor(DEFAULT_BORDER_COLOR);
