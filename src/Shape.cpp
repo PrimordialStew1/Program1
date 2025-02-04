@@ -85,10 +85,33 @@ void Shape::PrintInfo(int p_size)
 
 void Shape::SetShapeType(string p_shapeType)
 {
-    shapeType = p_shapeType;
+    if(p_shapeType == "circle" || p_shapeType == "triangle")
+    {
+        shapeType = p_shapeType;
+    }
+    else
+    {
+        shapeType = "undefined shape";
+    }
 }
 
 void Shape::SetNumSides(int p_numSides)
 {
-    numSides = p_numSides;
+    switch(p_numSides)
+    {
+        case 1:
+            numSides = 1;
+            break;
+        
+        case 3:
+            numSides = 3;
+            break;
+
+        case 0:
+            numSides = 0;
+            break;
+        
+        default:
+            break;
+    }
 }
