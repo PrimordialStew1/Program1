@@ -6,15 +6,21 @@
 // For: CS221-02, Spring 2025 Mrs. Delugach
 // Using compiler g++
 
+#include <iostream>
 #include "Shape.h"
+
+using std::cout;
 
 Shape::Shape()
 {
-
+    shapeType = "undefined shape";
+    numSides = 0;
+    borderColor = "clear";
+    fillColor = "clear";
 }
 Shape::~Shape()
 {
-
+    cout << "This shape got eviscerated!";
 }
 
 string Shape::GetFillColor()
