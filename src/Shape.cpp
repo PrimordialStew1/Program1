@@ -13,10 +13,10 @@ using std::cout;
 
 Shape::Shape()
 {
-    shapeType = "undefined shape";
-    numSides = 0;
-    borderColor = "clear";
-    fillColor = "clear";
+    SetShapeType("undefined shape");
+    SetNumSides(0);
+    SetBorderColor("clear");
+    SetFillColor("clear");
 
     cout << "Shape Class by Aaron Davis for Elementary Graphics\n\n";
 }
