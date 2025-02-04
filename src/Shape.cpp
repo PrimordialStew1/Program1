@@ -86,8 +86,10 @@ void Shape::PrintInfo(int p_size)
 
 void Shape::SetShapeType(string p_shapeType)
 {
+    shapeType = p_shapeType;
 }
 
 void Shape::SetNumSides(int p_numSides)
 {
+    numSides = p_numSides;
 }

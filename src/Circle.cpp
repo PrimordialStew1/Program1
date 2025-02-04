@@ -62,5 +62,5 @@ int Circle::CalcPerimeter()
 
 void Circle::PrintInfo()
 {
-
+    Shape::PrintInfo(radius);
 }
